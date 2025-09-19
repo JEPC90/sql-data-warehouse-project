@@ -6,9 +6,10 @@ DDL Script: Create Bronze Tables
 ==========================================================
 
 Script Purpose:
-	This script creates 6 new tables, in the Bronze schema, using the established naming conventions, from the source data after checking if each table already exists.
-	If the table exists, it is dropped and recreated.
+	This script creates tables in the 'Bronze' schema, dropping existing tables if they already exist.
 	Run this script to re-define the DDL structure of 'Bronze' tables.
+
+==========================================================
 */
 
 IF OBJECT_ID ('bronze.crm_cust_info' , 'U') IS NOT NULL
